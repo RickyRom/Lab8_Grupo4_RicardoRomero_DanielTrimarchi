@@ -4,6 +4,7 @@
 #include "Real.h"
 #include "Racional.h"
 #include "Radical.h"
+#include <fstream>
 using namespace std;
 vector<Real> agregar(vector<Real>);
 void pedirnumero(vector<Real>&,int);
@@ -115,6 +116,10 @@ void pedirnumero(vector<Real>& banco,int signo){
 				break;
 
 		}
+		/*
+		ofstream salida
+
+		*/
 	if(signo==1){
 		if((n1&&n2)==true){
 			cout<<banco[num1].getNumero()<<" + "<<banco[num2].getNumero()<<" = "<<banco[num1]+banco[num2];
@@ -127,7 +132,7 @@ void pedirnumero(vector<Real>& banco,int signo){
 		}
 	}else if(signo==2){
 				if((n1&&n2)==true){
-			cout<<banco[num1].getNumero()<<" - "<<banco[num2].getNumero()<<" = "<<banco[n1]-banco[num2];
+			cout<<banco[num1].getNumero()<<" - "<<banco[num2].getNumero()<<" = "<<banco[num1]-banco[num2];
 		}else if(n1==true && n2==false){
 			cout<<banco[num1].getNumero()<<" - "<<num2<<" = "<<banco[num1]-num2;
 		}else if(n2==true && n1==false){
@@ -151,7 +156,7 @@ void pedirnumero(vector<Real>& banco,int signo){
 		}else if(n1==true && n2==false){
 			cout<<banco[num1].getNumero()<<" / "<<num2<<" = "<<banco[num1]/num2;
 		}else if(n2==true && n1==false){
-				cout<<num1<<" / "<<banco[num2].getNumero()<<" = "<<num1-banco[num2].getNumero();
+				cout<<num1<<" / "<<banco[num2].getNumero()<<" = "<<num1/banco[num2].getNumero();
 		}else if((n1&&n2)==false){
 			cout<<num1<<" / "<<num2<<" = "<<num1/num2;
 		}
