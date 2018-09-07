@@ -13,7 +13,7 @@ int main() {
 	int opcion,nbancos,num1,num2;
 
 	do{
-		cout<<"Bienvenil Menu de Opciones"<<endl;
+		cout<<"Bienvenido Menu de Opciones"<<endl;
 		cout<<"1.- AgregarReal"<<endl;
 		cout<<"2.- Sumar"<<endl;
 		cout<<"3.- Restar"<<endl;
@@ -21,15 +21,10 @@ int main() {
 		cout<<"5.- Dividir"<<endl;
 		cout<<"6.- Salir"<<endl;
 		cin>> opcion;
-		cout<< "Desea usar solo numeros del banco?[1:si /2:no ]: ";
-		cin >>nbancos;
 
 		switch (opcion) {
 
 			case 1:
-
-				banco=agregar(banco);
-
 				banco = agregar(banco);
 
 				break;
@@ -96,6 +91,7 @@ void pedirnumero(vector<Real>& banco,int signo){
 	cout<<"Desea usar un numero del banco?:"<<endl;
 	cout<<"1) Si o 2) No"<<endl;
 	cin>>opcion;
+	cout<<"---------------";
 	}while(opcion<1||opcion>2);
 		switch(opcion){
 			case 1:
@@ -160,7 +156,7 @@ void pedirnumero(vector<Real>& banco,int signo){
 			cout<<num1<<" / "<<num2<<" = "<<num1/num2;
 		}
 	}
-
+cout<<endl;
 }
 
 vector<Real> agregar(vector<Real> banco) {

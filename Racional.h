@@ -13,7 +13,7 @@ class Racional:public Real {
         double den;
 
     public:
-            virtual double getNumero();
+     double getNumero();
     //virtual double setNumero();
          Racional();
         Racional(double,double);

@@ -7,7 +7,7 @@ protected:
 public:
 	Real();
 	~Real();
-	 double getNumero();
+	 virtual double getNumero();
 	//virtual double setNumero();
 	double operator+(Real&);
 	double operator-(Real&);

@@ -7,7 +7,7 @@ class Radical: public Real
 private: 
 	double coeficiente,indice,radicando;
 public:
-	virtual double getNumero();
+	 double getNumero();
 	//virtual double setNumero();
 	Radical();
 	Radical(double,double,double);
