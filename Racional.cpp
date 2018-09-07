@@ -7,6 +7,7 @@ Racional::Racional() {
 Racional::Racional(double pnum, double pden) {
     num = pnum;
     den = pden;
+    numero=num/den;
 }
 
 Racional::~Racional() {
@@ -30,3 +31,6 @@ void Racional::setNum(double pnum) {
 void Racional::setDen(double pden) {
     den = pden;
 }
+	double Racional::getNumero(){
+		return numero;
+	}
