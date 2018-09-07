@@ -3,14 +3,14 @@
 
 using namespace std;
 
-class Racional {
+class Racional{
     
     private:
         double num;
         double den;
 
     public:
-        Racional():
+        Racional();
         Racional(double,double);
         ~Racional();
 
