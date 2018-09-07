@@ -1,16 +1,18 @@
 #ifndef RACIONAL_H
 #define RACIONAL_H
 
+#include "Real.h"
+
 using namespace std;
 
-class Racional {
+class Racional:public Real {
     
     private:
         double num;
         double den;
 
     public:
-        Racional():
+        Racional();
         Racional(double,double);
         ~Racional();
 
