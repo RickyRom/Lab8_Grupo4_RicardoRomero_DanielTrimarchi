@@ -92,7 +92,7 @@ void pedirnumero(vector<Real>& banco,int signo){
 	cout<<"Desea usar un numero del banco?:"<<endl;
 	cout<<"1) Si o 2) No"<<endl;
 	cin>>opcion;
-	cout<<"---------------";
+	cout<<"---------------"<<endl;
 	}while(opcion<1||opcion>2);
 		switch(opcion){
 			case 1:
