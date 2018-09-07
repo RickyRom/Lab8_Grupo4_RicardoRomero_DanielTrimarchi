@@ -5,11 +5,7 @@
 
 using namespace std;
 
-<<<<<<< HEAD
-class Racional{
-=======
 class Racional:public Real {
->>>>>>> 9ca6084630597cafd8edaff33114c67955c4ec06
     
     private:
         double num;
