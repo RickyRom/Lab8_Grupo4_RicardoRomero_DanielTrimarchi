@@ -6,17 +6,15 @@
 #include "Radical.h"
 using namespace std;
 vector<Real> agregar(vector<Real>);
-
-void pedirnumero(vector<Real> banco,int);
-
+void pedirnumero(vector<Real>&,int);
 
 int main() {
 	vector<Real> banco;
 	int opcion,nbancos,num1,num2;
 
 	do{
-		cout<<"Bienvenido al Menu de Opciones"<<endl;
-		cout<<"1.- Agregar Real"<<endl;
+		cout<<"Bienvenil Menu de Opciones"<<endl;
+		cout<<"1.- AgregarReal"<<endl;
 		cout<<"2.- Sumar"<<endl;
 		cout<<"3.- Restar"<<endl;
 		cout<<"4.- Multiplicar"<<endl;
@@ -29,7 +27,11 @@ int main() {
 		switch (opcion) {
 
 			case 1:
+
 				banco=agregar(banco);
+
+				banco = agregar(banco);
+
 				break;
 			case 2:
 				pedirnumero(banco,1);
@@ -49,7 +51,7 @@ int main() {
 				
 				break;
 			case 6:
-				cout<<"Tenga Buen Dia"<<endl;
+				cout<<"¡TENGA UN BUEN DIA!"<<endl;
 				break;	
 		}
 	}while(opcion != 6);
@@ -158,5 +160,56 @@ void pedirnumero(vector<Real>& banco,int signo){
 			cout<<num1<<" / "<<num2<<" = "<<num1/num2;
 		}
 	}
+
+}
+
+vector<Real> agregar(vector<Real> banco) {
+	int opn;
+	do{
+		cout<<"Que Desea Agregar?"<<endl;
+		cout<<"1.- Racional"<<endl;
+		cout<<"2.- Radical"<<endl;
+		cout<<"3.- Salir"<<endl;
+		cin>> opn;
+
+		switch(opn) {
+
+			case 1:
+			{
+				double num, den;
+
+				cout<<"Ingrese el numerador: "<<endl;
+				cin>> num;
+				cout<<"Ingrese el denominador: "<<endl;
+				cin>> den;
+
+				Real raci = Racional(num,den);
+				banco.push_back(raci);
+
+				break;
+			}
+			case 2:{
+
+			
+				double coef, indice, radic;
+
+				cout<<"Ingrese el Coeficiente"<<endl;
+				cin>> coef;
+				cout<<"Ingrese el indice: "<<endl;
+				cin>> indice;
+				cout<<"Ingrese el radicando: "<<endl;
+				cin>> radic;
+
+				Real radical = Radical(coef,indice,radic);
+				banco.push_back(radical);
+
+				break;
+			}	
+			case 3:
+				break;
+		}
+
+	}while (opn != 3);
+	return banco;
 
 }

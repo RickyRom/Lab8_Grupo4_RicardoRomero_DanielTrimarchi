@@ -1,5 +1,6 @@
 #include "Radical.h"
 
+
 	Radical::Radical(double pCoef,double pIndice,double pRad){
 		coeficiente= pCoef;
 		indice=pIndice;
