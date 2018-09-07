@@ -1,11 +1,14 @@
 #ifndef RADICAL_H
 #define RADICAL_H 
-class Radical
+
+#include "Real.h"
+class Radical: public Real
 {
 private: 
 	double coeficiente,indice,radicando;
 public:
 	Radical();
+	Radical(double,double,double);
 	~Radical();
 	double getCoeficiente();
 	void setCoeficiente(double);
