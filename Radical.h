@@ -11,7 +11,7 @@ public:
 	void setCoeficiente(double);
 	
 	double getIndice();
-	void setIndice(doube);
+	void setIndice(double);
 
 	double getRadicando();
 	void setRadicando(double);

@@ -11,7 +11,7 @@
 		return coeficiente;
 	}
 	void Radical::setCoeficiente(double pCoef){
-		coeficiente= pCoef
+		coeficiente= pCoef;
 	}
 	
 	double Radical::getIndice(){
