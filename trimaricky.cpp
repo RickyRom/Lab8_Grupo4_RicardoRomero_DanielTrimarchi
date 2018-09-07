@@ -5,9 +5,9 @@
 #include "Racional.h"
 #include "Radical.h"
 using namespace std;
-void agregar(vector<Real>&);
+vector<Real> agregar(vector<Real>);
 
-void pedirnumero(vector<Real>& banco,int);
+void pedirnumero(vector<Real> banco,int);
 
 
 int main() {
@@ -29,7 +29,7 @@ int main() {
 		switch (opcion) {
 
 			case 1:
-				agregar(banco);
+				banco=agregar(banco);
 				break;
 			case 2:
 				pedirnumero(banco,1);
