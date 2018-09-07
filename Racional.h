@@ -5,14 +5,17 @@
 
 using namespace std;
 
+
 class Racional:public Real {
-    
+
     private:
         double num;
         double den;
 
     public:
-        Racional();
+            virtual double getNumero();
+    //virtual double setNumero();
+         Racional();
         Racional(double,double);
         ~Racional();
 
